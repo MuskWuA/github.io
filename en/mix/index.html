@@ -335,6 +335,7 @@
     <ul class="con">
          <li><a id="spot" data-text="现货" >Spot</a></li>
          <li><a id="mix" data-text="专业合约" >FuturesⓂ(USDT/Coin)</a></li>
+         <li><a id="copyTrade" data-text="跟单交易" >Copy Trade</a></li>
     </ul>
   </div>
   <a class="international" id="international" href="javascript:void(0);">English</a>
@@ -563,9 +564,6 @@
                         <a href="#get-all-position" class="toc-h3 toc-link" data-title="Get All Position">Get All Position</a>
                       </li>
                       <li>
-                        <a href="#get-history-position" class="toc-h3 toc-link" data-title="Get History Position">Get History Position</a>
-                      </li>
-                      <li>
                         <a href="#get-account-bill" class="toc-h3 toc-link" data-title="Get Account Bill">Get Account Bill</a>
                       </li>
                       <li>
@@ -757,6 +755,19 @@ clipboard.on('error', function(e) {
 <h1 id='welcome'>Welcome</h1>
 <p>Welcome to CoinCatch ApiDoc! Click <a href="#introduction">here</a> for quick start</p>
 <h1 id='update-log'>Update log</h1>
+<p><strong>Dec 28, 2023</strong></p>
+
+<ul>
+<li>New interface <a href="#get-merged-depth-data">Get merged depth data</a></li>
+<li><a href="#get-single-account">Get Single Account</a> added new field on response: &#39;crossedUnrealizedPL&#39; and &#39;isolatedUnrealizedPL&#39;</li>
+<li><a href="#get-symbol-position">Get Symbol Position</a> added new field on response: &#39;autoMargin&#39;</li>
+<li><a href="#get-all-position">Get All Position</a> added new field on response: &#39;autoMargin&#39;</li>
+<li><a href="#get-account-bill">Get Account Bill</a> added new field on request: &#39;business&#39;</li>
+<li><a href="#get-business-account-bill">Get Business Account Bill</a> added new field on request: &#39;business&#39;</li>
+<li><a href="#get-all-open-order">Get All Open Order</a> added new fields on response: &#39;presetTakeProfitPrice&#39;,&#39;presetStopLossPrice&#39;,&#39;filledAmount&#39;,&#39;leverage&#39;,&#39;marginMode&#39;,&#39;reduceOnly&#39;,&#39;enterPointSource&#39;,&#39;tradeSide&#39;,&#39;holdMode&#39;,&#39;orderSource&#39;,&#39;uTime&#39;</li>
+<li><a href="#get-history-plan-orders-tpsl">Get History Plan Orders</a> added new field on request: &#39;productType&#39;</li>
+</ul>
+
 <p><strong>May 26, 2023</strong></p>
 
 <ul>
@@ -1719,7 +1730,7 @@ If there is a large deviation between the local server time and the API server t
 <blockquote>
 <p>request example</p>
 </blockquote>
-<pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.bitget.com/api/mix/v1/market/merge-depth?symbol=ETHUSDT_UMCBL&amp;precision=scale0&amp;limit=5"</span>
+<pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.coincatch.com/api/mix/v1/market/merge-depth?symbol=ETHUSDT_UMCBL&amp;precision=scale0&amp;limit=5"</span>
 </code></pre>
 <p><strong>request parameters</strong></p>
 
@@ -4437,170 +4448,6 @@ If there is a large deviation between the local server time and the API server t
 <tr>
 <td style="text-align: left">uTime</td>
 <td style="text-align: left">Last update time Timestamp milliseconds</td>
-</tr>
-</tbody></table>
-<h3 id='get-history-position'>Get History Position</h3>
-<p>Only supports Query within 3 months</p>
-
-<p>Limit rule: 20c/1s (uid)</p>
-
-<p><strong>HTTP Request</strong></p>
-
-<ul>
-<li>GET /api/mix/v1/position/history-position</li>
-</ul>
-
-<p><strong>Request Parameter(Request Param)</strong></p>
-
-<table><thead>
-<tr>
-<th>Parameter</th>
-<th>type</th>
-<th>Required</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>productType</td>
-<td>String</td>
-<td>No</td>
-<td>Business type Default umcbl If symbol is passed, this field will be invalid</td>
-</tr>
-<tr>
-<td>symbol</td>
-<td>String</td>
-<td>No</td>
-<td>symbolId</td>
-</tr>
-<tr>
-<td>pageSize</td>
-<td>Int</td>
-<td>No</td>
-<td>default 20 Max 100</td>
-</tr>
-<tr>
-<td>startTime</td>
-<td>String</td>
-<td>Yes</td>
-<td>startTime，eg：<code>1597026383085</code>. (For Managed Sub-Account, the StartTime cannot be earlier than the binding time)</td>
-</tr>
-<tr>
-<td>endTime</td>
-<td>String</td>
-<td>Yes</td>
-<td>endTime，eg：<code>1597026383011</code> Maximum interval 90 days</td>
-</tr>
-<tr>
-<td>lastEndId</td>
-<td>String</td>
-<td>No</td>
-<td>lastEndId</td>
-</tr>
-</tbody></table>
-
-<blockquote>
-<p>Request Example</p>
-</blockquote>
-<pre class="highlight plaintext"><code>curl "https://api.bitget.com/api/mix/v1/position/history-positions?productType=umcbl&amp;startTime=&amp;endTime="
-</code></pre>
-<blockquote>
-<p>Response</p>
-</blockquote>
-<pre class="highlight plaintext"><code>{
-  "code": "00000",
-  "msg": "success",
-  "requestTime": 0,
-  "data": {
-    "list": [
-      {
-        "symbol": "ETHUSDT_UMCBL",
-        "marginCoin": "USDT",
-        "holdSide": "short",
-        "openAvgPrice": "1206.7",
-        "closeAvgPrice": "1206.8",
-        "marginMode": "fixed",
-        "openTotalPos": "1.15",
-        "closeTotalPos": "1.15",
-        "pnl": "-0.11",
-        "netProfit": "-1.780315",
-        "totalFunding": "0",
-        "openFee": "-0.83",
-        "closeFee": "-0.83",
-        "ctime": "1689300233897",
-        "utime": "1689300238205"
-      }
-    ],
-    "endId": "1062308959580516352"
-  }
-}
-</code></pre>
-<p><strong>Response Description</strong></p>
-
-<table><thead>
-<tr>
-<th>parameter</th>
-<th>description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>symbol</td>
-<td>Symbol Id</td>
-</tr>
-<tr>
-<td>marginCoin</td>
-<td>Margin currency</td>
-</tr>
-<tr>
-<td>holdSide</td>
-<td><a href="#holdside">Position direction</a></td>
-</tr>
-<tr>
-<td>openAvgPrice</td>
-<td>open average price</td>
-</tr>
-<tr>
-<td>closeAvgPrice</td>
-<td>close average price</td>
-</tr>
-<tr>
-<td>marginMode</td>
-<td><a href="#marginmode">Margin mode</a></td>
-</tr>
-<tr>
-<td>openTotalPos</td>
-<td>open position size  (accumulate)</td>
-</tr>
-<tr>
-<td>closeTotalPos</td>
-<td>close position size  (accumulate)</td>
-</tr>
-<tr>
-<td>pnl</td>
-<td>realized profit and loss</td>
-</tr>
-<tr>
-<td>netProfit</td>
-<td>net profit and loss</td>
-</tr>
-<tr>
-<td>totalFunding</td>
-<td>Funding costs (Funding costs Cumulative)</td>
-</tr>
-<tr>
-<td>openFee</td>
-<td>Total handling fee for position opening</td>
-</tr>
-<tr>
-<td>closeFee</td>
-<td>Total handling fee for position closing</td>
-</tr>
-<tr>
-<td>cTime</td>
-<td>Last update time Timestamp milliseconds</td>
-</tr>
-<tr>
-<td>uTime</td>
-<td>Last update time Timestamp milliseconds</td>
 </tr>
 </tbody></table>
 <h3 id='get-account-bill'>Get Account Bill</h3>
@@ -12069,6 +11916,7 @@ channel books15 return 15 bids index from 5 to 19(index 19 is bid1), and return 
 
     var $Spot=$("#spot");
         $Mix=$("#mix");
+        $CopyTrade=$("#copyTrade");
     if(isBroker){
         $Broker.addClass('selected');
     }
@@ -12088,7 +11936,7 @@ channel books15 return 15 bids index from 5 to 19(index 19 is bid1), and return 
     if(!isEn){
         $Spot.html($Spot.attr('data-text'))
         $Mix.html($Mix.attr('data-text'))
-
+        $CopyTrade.html($CopyTrade.attr('data-text'))
         $international.html('English')
     }else {
         $international.html('简体中文')

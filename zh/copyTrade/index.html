@@ -484,6 +484,9 @@
                         <a href="#f81de52fbe" class="toc-h3 toc-link" data-title="交易员获取历史带单">交易员获取历史带单</a>
                       </li>
                       <li>
+                          <a href="#symbol" class="toc-h3 toc-link" data-title="合约交易员根据Symbol平仓">合约交易员根据Symbol平仓</a>
+                      </li>
+                      <li>
                         <a href="#36cac047b7" class="toc-h3 toc-link" data-title="交易员分润汇总">交易员分润汇总</a>
                       </li>
                       <li>
@@ -528,6 +531,33 @@
                       <li>
                         <a href="#50259674af" class="toc-h3 toc-link" data-title="跟单用户取消跟随交易员">跟单用户取消跟随交易员</a>
                       </li>
+                      <li>
+                          <a href="#80d0677e4b" class="toc-h3 toc-link" data-title="交易员修改带单设置">交易员修改带单设置</a>
+                      </li>
+                      <li>
+                          <a href="#5ee6e620d8" class="toc-h3 toc-link" data-title="获取我的交易员列表">获取我的交易员列表</a>
+                      </li>
+                      <li>
+                          <a href="#39132a5be8" class="toc-h3 toc-link" data-title="获取我的跟随者列表">获取我的跟随者列表</a>
+                      </li>
+                      <li>
+                          <a href="#495a1b17ff" class="toc-h3 toc-link" data-title="交易员取消跟随者">交易员取消跟随者</a>
+                      </li>
+                      <li>
+                          <a href="#72188f9be9" class="toc-h3 toc-link" data-title="获取跟随者单笔最小跟单数量和最大跟单数量">获取跟随者单笔最小跟单数量和最大跟单数量</a>
+                      </li>
+                      <li>
+                          <a href="#997f9d0e79" class="toc-h3 toc-link" data-title="交易员历史带单列表">交易员历史带单列表</a>
+                      </li>
+                      <li>
+                          <a href="#aa9e594e6e" class="toc-h3 toc-link" data-title="交易员当前带单列表">交易员当前带单列表</a>
+                      </li>
+                      <li>
+                          <a href="#6db38712b7" class="toc-h3 toc-link" data-title="交易员查询止盈止损比例设置">交易员查询止盈止损比例设置</a>
+                      </li>
+                      <li>
+                          <a href="#f83553cb49" class="toc-h3 toc-link" data-title="交易员设置止盈止损比例">交易员设置止盈止损比例</a>
+                      </li>
                   </ul>
               </li>
               <li>
@@ -571,6 +601,12 @@
                       </li>
                       <li>
                         <a href="#e40109a55a" class="toc-h3 toc-link" data-title="取消跟随">取消跟随</a>
+                      </li>
+                      <li>
+                          <a href="#fec9f644fd" class="toc-h3 toc-link" data-title="现货交易员获取可移除跟随者配置">现货交易员获取可移除跟随者配置</a>
+                      </li>
+                      <li>
+                          <a href="#058bfefd56" class="toc-h3 toc-link" data-title="现货交易员移除跟随者">现货交易员移除跟随者</a>
                       </li>
                       <li>
                         <a href="#36cac047b7-2" class="toc-h3 toc-link" data-title="交易员分润汇总">交易员分润汇总</a>
@@ -626,7 +662,7 @@ clipboard.on('error', function(e) {
 });
 </script>
 <h1 id='welcome'>Welcome</h1>
-<p>欢迎来到Bitget API文档！点击<a href="#5ea2e0cde2">这里</a>直接开始</p>
+<p>欢迎来到CoinCatch API文档！点击<a href="#5ea2e0cde2">这里</a>直接开始</p>
 <h1 id='185368440e'>更新日志</h1>
 <p><strong>2023年05月17日</strong></p>
 
@@ -634,23 +670,21 @@ clipboard.on('error', function(e) {
 <li>跟单上档上线</li>
 </ul>
 <h1 id='5ea2e0cde2'>简介</h1><h2 id='api'>API 简介</h2>
-<p>欢迎使用Bitget开发者文档！</p>
+<p>欢迎使用CoinCatch开发者文档！</p>
 
-<p>此文档是Bitget API的唯一官方文档，Bitget API提供的能力会在此持续更新，请大家及时关注。</p>
+<p>此文档是CoinCatch API的唯一官方文档，CoinCatch API提供的能力会在此持续更新，请大家及时关注。</p>
 
 <p>你可以通过点击上方菜单来切换获取不同业务的API，还可通过点击右上方的语言按钮来切换文档语言。</p>
 
 <p>文档右侧是针对请求参数以及响应结果的示例。</p>
 <h2 id='7b3af22e1f'>更新关注</h2>
-<p>关于API新增、更新、下线等信息Bitget会提前发布公告进行通知，建议您关注和订阅我们的公告，及时获取相关信息。</p>
+<p>关于API新增、更新、下线等信息CoinCatch会提前发布公告进行通知，建议您关注和订阅我们的公告，及时获取相关信息。</p>
 
-<p>您可以点击 <a href='https://bitget.zendesk.com/hc/zh-cn/categories/360002621832-%E6%9C%80%E6%96%B0%E5%85%AC%E5%91%8A'>这里 </a> 订阅公告。</p>
 <h2 id='152d3db758'>联系我们</h2>
 <p>使用过程中如有问题或者建议，您可选择以下方式联系我们：</p>
 
 <ul>
 <li>发送邮件至API@coincatch.com。</li>
-<li>Telegram <a href='https://t.me/bitgetapi'>点击加入</a></li>
 </ul>
 <h1 id='25e54147de'>快速入门</h1><h2 id='c1ae0a8486'>接入准备</h2>
 <p>如需使用API ，请先<a href='https://www.coincatch.com/zh-CN/login'>登录</a>网页端，完成API key的申请和权限配置，再据此文档详情进行开发和交易。</p>
@@ -692,21 +726,7 @@ clipboard.on('error', function(e) {
 这三个密钥任意一个泄露可能会造成您的资产损失，若发现APIKey泄露请尽快删除该APIKey。
 ```
 
-</aside> 
-<h2 id='sdk'>SDK/代码示例</h2>
-<p><strong>SDK（推荐）</strong></p>
-
-<p>现货跟单 SDK: </p>
-
-<p><a href="https://github.com/BitgetLimited/v3-bitget-api-sdk/tree/master/bitget-java-sdk-open-api">Java</a> | <a href="https://github.com/BitgetLimited/v3-bitget-api-sdk/tree/master/bitget-python-sdk-open-api">Python</a> | <a href="https://github.com/BitgetLimited/v3-bitget-api-sdk/tree/master/bitget-goland-sdk-open-api">GoLang</a> | <a href="https://github.com/BitgetLimited/v3-bitget-api-sdk/tree/master/bitget-node-sdk-open-api">NodeJs</a> | <a href="https://github.com/BitgetLimited/v3-bitget-api-sdk/tree/master/bitget-php-sdk-open-api">PHP</a></p>
-
-<p>合约跟单 SDK: </p>
-
-<p><a href="https://github.com/BitgetLimited/V3-bitget-api-sdk/tree/master/bitget-java-sdk-api">Java</a> | <a href="https://github.com/BitgetLimited/V3-bitget-api-sdk/tree/master/bitget-python-sdk-api">Python</a> | <a href="https://github.com/BitgetLimited/v3-bitget-api-sdk/tree/master/bitget-golang-sdk-api">GoLang</a> | <a href="https://www.npmjs.com/package/bitget-api">NodeJs</a> | <a href="https://github.com/BitgetLimited/v3-bitget-api-sdk/tree/master/bitget-php-sdk-api">PHP</a></p>
-
-<p><strong>PostMan 示例</strong></p>
-
-<p><a href="../../sdk/Biget_CopyTrade.postman_collection.json">PostMan</a></p>
+</aside>
 <h2 id='5076603a3e'>接口类型</h2>
 <p>本章节主要为接口类型分以下两个方面：</p>
 
@@ -1145,6 +1165,8 @@ Signature = base64.encode(Signature)
             </span><span class="s2">"openLeverage"</span><span class="p">:</span><span class="mi">20</span><span class="p">,</span><span class="w">
             </span><span class="s2">"openAvgPrice"</span><span class="p">:</span><span class="mf">11451.5</span><span class="p">,</span><span class="w">
             </span><span class="s2">"openTime"</span><span class="p">:</span><span class="mi">1602582690614</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"closeOrderId"</span><span class="p">:</span><span class="mi">xxxxxxxxxxx</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"openFee"</span><span class="p">:</span><span class="mi">0.12</span><span class="p">,</span><span class="w">
             </span><span class="s2">"openDealCount"</span><span class="p">:</span><span class="s2">"10"</span><span class="p">,</span><span class="w">
             </span><span class="s2">"stopProfitPrice"</span><span class="p">:</span><span class="s2">"123.14"</span><span class="p">,</span><span class="w">
             </span><span class="s2">"stopLossPrice"</span><span class="p">:</span><span class="s2">"20.52"</span><span class="w">
@@ -1193,6 +1215,14 @@ Signature = base64.encode(Signature)
 <tr>
 <td style="text-align: left">openDealCount</td>
 <td style="text-align: left">开仓数量</td>
+</tr>
+<tr>
+<td style="text-align: left">closeOrderId</td>
+<td style="text-align: left">平仓单ID</td>
+</tr>
+<tr>
+<td style="text-align: left">openFee</td>
+<td style="text-align: left">开仓费</td>
 </tr>
 <tr>
 <td style="text-align: left">stopProfitPrice</td>
@@ -1278,6 +1308,7 @@ Signature = base64.encode(Signature)
             </span><span class="s2">"averageClosePrice"</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="w">
             </span><span class="s2">"closeDealCount"</span><span class="p">:</span><span class="s2">"0.0000000000000000"</span><span class="p">,</span><span class="w">
             </span><span class="s2">"openMargin"</span><span class="p">:</span><span class="s2">"21"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"openFee"</span><span class="p">:</span><span class="s2">"0.21"</span><span class="p">,</span><span class="w">
             </span><span class="s2">"closeTime"</span><span class="p">:</span><span class="mi">0</span><span class="w">
         </span><span class="p">}</span><span class="w">
     </span><span class="p">],</span><span class="w">
@@ -1340,6 +1371,10 @@ Signature = base64.encode(Signature)
 <tr>
 <td style="text-align: left">closeDealCount</td>
 <td style="text-align: left">平仓数量</td>
+</tr>
+<tr>
+<td style="text-align: left">openFee</td>
+<td style="text-align: left">开仓费</td>
 </tr>
 <tr>
 <td style="text-align: left">closeTime</td>
@@ -1651,9 +1686,27 @@ Signature = base64.encode(Signature)
     </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"00000"</span><span class="p">,</span><span class="w">
     </span><span class="s2">"msg"</span><span class="p">:</span><span class="w"> </span><span class="s2">"success"</span><span class="p">,</span><span class="w">
     </span><span class="s2">"requestTime"</span><span class="p">:</span><span class="w"> </span><span class="mi">1656066841304</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="mi">924176438170464256</span><span class="w">
+    </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="mi">"924176438170464256"</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre><h3 id='f81de52fbe'>交易员获取历史带单</h3>
+</span></code></pre>
+<p><strong>返回值说明</strong></p>
+
+<table><thead>
+<tr>
+  <th style="text-align: left">返回字段</th>
+  <th style="text-align: left">字段说明</th>
+</tr>
+</thead><tbody>
+<tr>
+  <td style="text-align: left">data</td>
+  <td style="text-align: left">带单号</td>
+</tr>
+</tbody></table>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+<h3 id='f81de52fbe'>交易员获取历史带单</h3>
 <p>限速规则  10次/1s (uid)</p>
 
 <p><strong>HTTP请求</strong></p>
@@ -1796,6 +1849,96 @@ Signature = base64.encode(Signature)
 <td style="text-align: left">平仓数量</td>
 </tr>
 </tbody></table>
+<h3 id='symbol'>合约交易员根据Symbol平仓</h3>
+<p>限速规则 10次/1s (uid)</p>
+
+<p><strong>HTTP请求</strong></p>
+
+<ul>
+  <li>POST /api/mix/v1/trace/closeTrackOrderBySymbol</li>
+</ul>
+
+<blockquote>
+  <p>请求示例</p>
+</blockquote>
+<pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.coincatch.com/api/mix/v1/trace/closeTrackOrderBySymbol"</span> <span class="se">\</span>
+-H <span class="s2">"ACCESS-KEY:you apiKey"</span> <span class="se">\</span>
+-H <span class="s2">"ACCESS-SIGN:*******"</span> <span class="se">\</span>
+-H <span class="s2">"ACCESS-PASSPHRASE:*****"</span> <span class="se">\</span>
+-H <span class="s2">"ACCESS-TIMESTAMP:1659076670000"</span> <span class="se">\</span>
+-H <span class="s2">"locale:en-US"</span> <span class="se">\</span>
+-H <span class="s2">"Content-Type: application/json"</span> <span class="se">\</span>
+-d <span class="se">\'</span><span class="o">{</span>
+<span class="s2">"symbol"</span>:<span class="s2">"BTCUSDT_UMCBL"</span>
+<span class="o">}</span><span class="s1">'
+</span></code></pre>
+<p><strong>请求参数</strong></p>
+
+<table><thead>
+<tr>
+  <th style="text-align: left">参数名</th>
+  <th style="text-align: left">参数类型</th>
+  <th style="text-align: center">是否必须</th>
+  <th style="text-align: center">描述</th>
+</tr>
+</thead><tbody>
+<tr>
+  <td style="text-align: left">symbol</td>
+  <td style="text-align: left">String</td>
+  <td style="text-align: center">否</td>
+  <td style="text-align: center">symbol</td>
+</tr>
+</tbody></table>
+
+<blockquote>
+  <p>返回数据</p>
+</blockquote>
+<pre class="highlight plaintext"><code>{
+"code":"00000",
+"data":{
+"trackingNos":["xxxxx"]
+},
+"msg":"success",
+"requestTime":1627354109502
+}
+</code></pre>
+<p><strong>返回值说明</strong></p>
+
+<table><thead>
+<tr>
+  <th style="text-align: left">返回字段</th>
+  <th style="text-align: left">字段说明</th>
+</tr>
+</thead><tbody>
+<tr>
+  <td style="text-align: left">trackingNos</td>
+  <td style="text-align: left">成功平仓的跟单号</td>
+</tr>
+</tbody></table>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
 <h3 id='36cac047b7'>交易员分润汇总</h3>
 <p>限速规则  20次/1s (uid)</p>
 
@@ -2030,7 +2173,7 @@ Signature = base64.encode(Signature)
         </span><span class="p">{</span><span class="w">
             </span><span class="s2">"settleTokenId"</span><span class="p">:</span><span class="s2">"usdt"</span><span class="p">,</span><span class="w">
             </span><span class="s2">"profit"</span><span class="p">:</span><span class="s2">"0"</span><span class="p">,</span><span class="w">
-            </span><span class="s2">"nickName"</span><span class="p">:</span><span class="s2">"bitget"</span><span class="w">
+            </span><span class="s2">"nickName"</span><span class="p">:</span><span class="s2">"coincatch"</span><span class="w">
         </span><span class="p">}</span><span class="w">
     </span><span class="p">],</span><span class="w">
     </span><span class="s2">"msg"</span><span class="p">:</span><span class="s2">"success"</span><span class="p">,</span><span class="w">
@@ -2111,7 +2254,7 @@ Signature = base64.encode(Signature)
         </span><span class="p">{</span><span class="w">
             </span><span class="s2">"settleTokenId"</span><span class="p">:</span><span class="s2">"usdt"</span><span class="p">,</span><span class="w">
             </span><span class="s2">"profit"</span><span class="p">:</span><span class="s2">"0"</span><span class="p">,</span><span class="w">
-            </span><span class="s2">"nickName"</span><span class="p">:</span><span class="s2">"bitget"</span><span class="w">
+            </span><span class="s2">"nickName"</span><span class="p">:</span><span class="s2">"coincatch"</span><span class="w">
         </span><span class="p">}</span><span class="w">
     </span><span class="p">],</span><span class="w">
     </span><span class="s2">"msg"</span><span class="p">:</span><span class="s2">"success"</span><span class="p">,</span><span class="w">
@@ -2994,11 +3137,28 @@ Signature = base64.encode(Signature)
 
 <table><thead>
 <tr>
-<th style="text-align: left">返回字段</th>
-<th style="text-align: center">字段说明</th>
+  <th style="text-align: left">返回字段</th>
+  <th style="text-align: left">字段说明</th>
 </tr>
 </thead><tbody>
+<tr>
+  <td style="text-align: left">data</td>
+  <td style="text-align: left">true 表示设置成功</td>
+</tr>
 </tbody></table>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
 <h3 id='67360f7cb3'>跟单用户根据跟单号平仓</h3>
 <p>限速规则 10次/1s</p>
 
@@ -3062,11 +3222,19 @@ Signature = base64.encode(Signature)
 
 <table><thead>
 <tr>
-<th style="text-align: left">返回字段</th>
-<th style="text-align: center">字段说明</th>
+  <th style="text-align: left">返回字段</th>
+  <th style="text-align: left">字段说明</th>
 </tr>
 </thead><tbody>
+<tr>
+  <td style="text-align: left">data</td>
+  <td style="text-align: left">true 表示设置成功</td>
+</tr>
 </tbody></table>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
 <h3 id='0a5f08e2d0'>跟单用户根据币对、方向、仓位模式、保证金平仓</h3>
 <p>限速规则 20次/1s</p>
 
@@ -3148,11 +3316,19 @@ Signature = base64.encode(Signature)
 
 <table><thead>
 <tr>
-<th style="text-align: left">返回字段</th>
-<th style="text-align: center">字段说明</th>
+  <th style="text-align: left">返回字段</th>
+  <th style="text-align: left">字段说明</th>
 </tr>
 </thead><tbody>
+<tr>
+  <td style="text-align: left">data</td>
+  <td style="text-align: left">true 表示设置成功</td>
+</tr>
 </tbody></table>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
 <h3 id='6ccdfb3263'>跟单用户设置止盈止损</h3>
 <p>限速规则 20次/1s</p>
 
@@ -3230,11 +3406,19 @@ Signature = base64.encode(Signature)
 
 <table><thead>
 <tr>
-<th style="text-align: left">返回字段</th>
-<th style="text-align: center">字段说明</th>
+  <th style="text-align: left">返回字段</th>
+  <th style="text-align: left">字段说明</th>
 </tr>
 </thead><tbody>
+<tr>
+  <td style="text-align: left">data</td>
+  <td style="text-align: left">true 表示设置成功</td>
+</tr>
 </tbody></table>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
 <h3 id='50259674af'>跟单用户取消跟随交易员</h3>
 <p>限速规则 5次/1s</p>
 
@@ -3284,7 +3468,1113 @@ Signature = base64.encode(Signature)
   "requestTime":163123213132,
   "data":true
 }
-</code></pre><h2 id='0d754733c2'>现货跟单</h2><h3 id='d08f7d2a3f'>查询当前带单列表（跟随者/交易员 调用）</h3>
+</code></pre>
+<h3 id='80d0677e4b'>交易员修改带单设置</h3>
+<p>限速规则 10次/1s</p>
+
+<p><strong>HTTP请求</strong></p>
+
+<ul>
+  <li>POST /api/mix/v1/trace/traderUpdateConfig</li>
+</ul>
+
+<blockquote>
+  <p>请求示例</p>
+</blockquote>
+<pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.coincatch.com/api/mix/v1/trace/traderUpdateConfig"</span> <span class="se">\</span>
+-H <span class="s2">"ACCESS-KEY:you apiKey"</span> <span class="se">\</span>
+-H <span class="s2">"ACCESS-SIGN:*******"</span> <span class="se">\</span>
+-H <span class="s2">"ACCESS-PASSPHRASE:*****"</span> <span class="se">\</span>
+-H <span class="s2">"ACCESS-TIMESTAMP:1659076670000"</span> <span class="se">\</span>
+-H <span class="s2">"locale:en-US"</span> <span class="se">\</span>
+-H <span class="s2">"Content-Type: application/json"</span> <span class="se">\</span>
+-d <span class="se">\'</span><span class="o">{</span>
+<span class="s2">"enableTrace"</span>: <span class="s2">"YES"</span>,
+<span class="s2">"showTotalEquity"</span>: <span class="s2">"YES"</span>,
+<span class="s2">"showTpsl"</span>: <span class="s2">"YES"</span>,
+<span class="o">}</span><span class="s1">'
+</span></code></pre>
+<p><strong>请求参数</strong></p>
+
+<table><thead>
+<tr>
+  <th style="text-align: left">参数名</th>
+  <th style="text-align: left">参数类型</th>
+  <th style="text-align: center">是否必须</th>
+  <th style="text-align: center">描述</th>
+</tr>
+</thead><tbody>
+<tr>
+  <td style="text-align: left">enableTrace</td>
+  <td style="text-align: left">String</td>
+  <td style="text-align: center">否</td>
+  <td style="text-align: center">（enableTrace， showTotalEquity， showTpsl三个参数设置最少需要传其中一个）  YES-开启带单   NO-关闭带单</td>
+</tr>
+<tr>
+  <td style="text-align: left">showTotalEquity</td>
+  <td style="text-align: left">String</td>
+  <td style="text-align: center">否</td>
+  <td style="text-align: center">是否展示总权益(USDT) （YES-开启 NO-关闭）</td>
+</tr>
+<tr>
+  <td style="text-align: left">showTpsl</td>
+  <td style="text-align: left">String</td>
+  <td style="text-align: center">否</td>
+  <td style="text-align: center">订单的止盈止损价将公开展示（YES-开启 NO-关闭）</td>
+</tr>
+</tbody></table>
+
+<blockquote>
+  <p>返回数据</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+</span><span class="s2">"code"</span><span class="p">:</span><span class="s2">"00000"</span><span class="p">,</span><span class="w">
+</span><span class="s2">"data"</span><span class="p">:</span><span class="kc">"success"</span><span class="p">,</span><span class="w">
+</span><span class="s2">"msg"</span><span class="p">:</span><span class="s2">"success"</span><span class="p">,</span><span class="w">
+</span><span class="s2">"requestTime"</span><span class="p">:</span><span class="mi">1627354109502</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p><strong>返回值说明</strong></p>
+
+<table><thead>
+<tr>
+  <th style="text-align: left">返回字段</th>
+  <th style="text-align: left">字段说明</th>
+</tr>
+</thead><tbody>
+<tr>
+  <td style="text-align: left">data</td>
+  <td style="text-align: left">success表示设置成功</td>
+</tr>
+</tbody></table>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+<h3 id='5ee6e620d8'>获取我的交易员列表</h3>
+<p>限速规则 10次/1s</p>
+
+<p><strong>HTTP请求</strong></p>
+
+<ul>
+  <li>POST /api/mix/v1/trace/myTraderList</li>
+</ul>
+
+<blockquote>
+  <p>请求示例</p>
+</blockquote>
+<pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.coincatch.com/api/mix/v1/trace/myTraderList"</span> <span class="se">\</span>
+-H <span class="s2">"ACCESS-KEY:you apiKey"</span> <span class="se">\</span>
+-H <span class="s2">"ACCESS-SIGN:*******"</span> <span class="se">\</span>
+-H <span class="s2">"ACCESS-PASSPHRASE:*****"</span> <span class="se">\</span>
+-H <span class="s2">"ACCESS-TIMESTAMP:1659076670000"</span> <span class="se">\</span>
+-H <span class="s2">"locale:en-US"</span> <span class="se">\</span>
+-H <span class="s2">"Content-Type: application/json"</span> <span class="se">\</span>
+-d <span class="se">\'</span><span class="o">{</span>
+<span class="s2">"pageNo"</span>: <span class="s2">"1"</span>,
+<span class="s2">"pageSize"</span>: <span class="s2">"10"</span>
+<span class="o">}</span><span class="s1">'
+</span></code></pre>
+<p><strong>请求参数</strong></p>
+
+<table><thead>
+<tr>
+  <th style="text-align: left">参数名</th>
+  <th style="text-align: left">参数类型</th>
+  <th style="text-align: center">是否必须</th>
+  <th style="text-align: center">描述</th>
+</tr>
+</thead><tbody>
+<tr>
+  <td style="text-align: left">pageNo</td>
+  <td style="text-align: left">String</td>
+  <td style="text-align: center">否</td>
+  <td style="text-align: center">page Number</td>
+</tr>
+<tr>
+  <td style="text-align: left">pageSize</td>
+  <td style="text-align: left">String</td>
+  <td style="text-align: center">否</td>
+  <td style="text-align: center">pageSize（默认 20， 最大 100）</td>
+</tr>
+</tbody></table>
+
+<blockquote>
+  <p>返回数据</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+</span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"00000"</span><span class="p">,</span><span class="w">
+</span><span class="s2">"msg"</span><span class="p">:</span><span class="w"> </span><span class="s2">"success"</span><span class="p">,</span><span class="w">
+</span><span class="s2">"requestTime"</span><span class="p">:</span><span class="w"> </span><span class="mi">1684830012057</span><span class="p">,</span><span class="w">
+</span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+</span><span class="p">{</span><span class="w">
+</span><span class="s2">"traderId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"bab646778eb23853ac94"</span><span class="p">,</span><span class="w">
+</span><span class="s2">"traderNickName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"tom"</span><span class="p">,</span><span class="w">
+</span><span class="s2">"maxFollowerLimit"</span><span class="p">:</span><span class="w"> </span><span class="s2">"500"</span><span class="p">,</span><span class="w">
+</span><span class="s2">"currentFollowerCount"</span><span class="p">:</span><span class="w"> </span><span class="s2">"500"</span><span class="p">,</span><span class="w">
+</span><span class="s2">"accumulateMarginAmount"</span><span class="p">:</span><span class="w"> </span><span class="s2">"89.6048"</span><span class="p">,</span><span class="w">
+</span><span class="s2">"accumulateNetProfit"</span><span class="p">:</span><span class="w"> </span><span class="s2">"-3.7760"</span><span class="p">,</span><span class="w">
+</span><span class="s2">"accumulateProfit"</span><span class="p">:</span><span class="w"> </span><span class="s2">"-0.1920"</span><span class="p">,</span><span class="w">
+</span><span class="s2">"currentTradingPairs"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+</span><span class="s2">"BTCUSDT_UMCBL"</span><span class="p">,</span><span class="w">
+</span><span class="s2">"BTCUSD_DMCBL"</span><span class="p">,</span><span class="w">
+</span><span class="s2">"EOSUSDT_UMCBL"</span><span class="p">,</span><span class="w">
+</span><span class="s2">"ETHUSDT_UMCBL"</span><span class="p">,</span><span class="w">
+</span><span class="s2">"ETHUSD_DMCBL"</span><span class="w">
+</span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p><strong>返回值说明</strong></p>
+
+<table><thead>
+<tr>
+  <th style="text-align: left">返回字段</th>
+  <th style="text-align: left">字段说明</th>
+</tr>
+</thead><tbody>
+<tr>
+  <td style="text-align: left">traderId</td>
+  <td style="text-align: left">交易员ID</td>
+</tr>
+<tr>
+  <td style="text-align: left">traderNickName</td>
+  <td style="text-align: left">昵称</td>
+</tr>
+<tr>
+  <td style="text-align: left">maxFollowerLimit</td>
+  <td style="text-align: left">最大跟随人数</td>
+</tr>
+<tr>
+  <td style="text-align: left">currentFollowerCount</td>
+  <td style="text-align: left">当前已跟人数</td>
+</tr>
+<tr>
+  <td style="text-align: left">accumulateMarginAmount</td>
+  <td style="text-align: left">累计开仓保证金</td>
+</tr>
+<tr>
+  <td style="text-align: left">accumulateNetProfit</td>
+  <td style="text-align: left">累计净收益</td>
+</tr>
+<tr>
+  <td style="text-align: left">accumulateProfit</td>
+  <td style="text-align: left">累计总收益</td>
+</tr>
+<tr>
+  <td style="text-align: left">currentTradingPairs</td>
+  <td style="text-align: left">带单币对</td>
+</tr>
+</tbody></table>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+<h3 id='39132a5be8'>获取我的跟随者列表</h3>
+<p>限速规则:  10次/1s (uid)</p>
+
+<p><strong>HTTP请求</strong></p>
+
+<ul>
+  <li>POST /api/mix/v1/trace/myFollowerList</li>
+</ul>
+
+<blockquote>
+  <p>请求示例</p>
+</blockquote>
+<pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.coincatch.com/api/mix/v1/trace/myFollowerList"</span> <span class="se">\</span>
+-H <span class="s2">"ACCESS-KEY:you apiKey"</span> <span class="se">\</span>
+-H <span class="s2">"ACCESS-SIGN:*******"</span> <span class="se">\</span>
+-H <span class="s2">"ACCESS-PASSPHRASE:*****"</span> <span class="se">\</span>
+-H <span class="s2">"ACCESS-TIMESTAMP:1659076670000"</span> <span class="se">\</span>
+-H <span class="s2">"locale:en-US"</span> <span class="se">\</span>
+-H <span class="s2">"Content-Type: application/json"</span> <span class="se">\</span>
+-d <span class="se">\'</span><span class="o">{</span>
+<span class="s2">"pageNo"</span>: <span class="s2">"1"</span>,
+<span class="s2">"pageSize"</span>: <span class="s2">"10"</span>
+<span class="o">}</span><span class="s1">'
+</span></code></pre>
+<p><strong>请求参数</strong></p>
+
+<table><thead>
+<tr>
+  <th style="text-align: left">参数名</th>
+  <th style="text-align: left">参数类型</th>
+  <th style="text-align: center">是否必须</th>
+  <th style="text-align: center">描述</th>
+</tr>
+</thead><tbody>
+<tr>
+  <td style="text-align: left">pageNo</td>
+  <td style="text-align: left">String</td>
+  <td style="text-align: center">否</td>
+  <td style="text-align: center">page Number</td>
+</tr>
+<tr>
+  <td style="text-align: left">pageSize</td>
+  <td style="text-align: left">String</td>
+  <td style="text-align: center">否</td>
+  <td style="text-align: center">pageSize（默认20 最大100）</td>
+</tr>
+</tbody></table>
+
+<blockquote>
+  <p>返回数据</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+</span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"00000"</span><span class="p">,</span><span class="w">
+</span><span class="s2">"msg"</span><span class="p">:</span><span class="w"> </span><span class="s2">"success"</span><span class="p">,</span><span class="w">
+</span><span class="s2">"requestTime"</span><span class="p">:</span><span class="w"> </span><span class="mi">1684920707124</span><span class="p">,</span><span class="w">
+</span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+</span><span class="p">{</span><span class="w">
+</span><span class="s2">"accountEquity"</span><span class="p">:</span><span class="w"> </span><span class="s2">"3434361.0097"</span><span class="p">,</span><span class="w">
+</span><span class="s2">"canRemoveFollower"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+</span><span class="s2">"followerHeadPic"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+</span><span class="s2">"followerNickName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"wfyan****@gmail.com"</span><span class="p">,</span><span class="w">
+</span><span class="s2">"followerUid"</span><span class="p">:</span><span class="w"> </span><span class="s2">"bab646778eb23853ac94"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p><strong>返回值说明</strong></p>
+
+<table><thead>
+<tr>
+  <th style="text-align: left">返回字段</th>
+  <th style="text-align: left">字段说明</th>
+</tr>
+</thead><tbody>
+<tr>
+  <td style="text-align: left">accountEquity</td>
+  <td style="text-align: left">账户总权益</td>
+</tr>
+<tr>
+  <td style="text-align: left">canRemoveFollower</td>
+  <td style="text-align: left">能否移除跟单用户</td>
+</tr>
+<tr>
+  <td style="text-align: left">followerHeadPic</td>
+  <td style="text-align: left">跟随者头像</td>
+</tr>
+<tr>
+  <td style="text-align: left">followerNickName</td>
+  <td style="text-align: left">跟随者昵称</td>
+</tr>
+<tr>
+  <td style="text-align: left">followerUid</td>
+  <td style="text-align: left">跟随者用户id</td>
+</tr>
+</tbody></table>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+<h3 id='495a1b17ff'>交易员取消跟随者</h3>
+<p>限速规则:  10次/1s (uid)</p>
+
+<p><strong>HTTP请求</strong></p>
+
+<ul>
+  <li>POST /api/mix/v1/trace/removeFollower</li>
+</ul>
+
+<blockquote>
+  <p>请求示例</p>
+</blockquote>
+<pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.coincatch.com/api/mix/v1/trace/removeFollower"</span> <span class="se">\</span>
+-H <span class="s2">"ACCESS-KEY:you apiKey"</span> <span class="se">\</span>
+-H <span class="s2">"ACCESS-SIGN:*******"</span> <span class="se">\</span>
+-H <span class="s2">"ACCESS-PASSPHRASE:*****"</span> <span class="se">\</span>
+-H <span class="s2">"ACCESS-TIMESTAMP:1659076670000"</span> <span class="se">\</span>
+-H <span class="s2">"locale:en-US"</span> <span class="se">\</span>
+-H <span class="s2">"Content-Type: application/json"</span> <span class="se">\</span>
+-d <span class="se">\'</span><span class="o">{</span>
+<span class="s2">"followerUid"</span>: <span class="s2">"bab646778eb23853ac94"</span>
+<span class="o">}</span><span class="s1">'
+</span></code></pre>
+<p><strong>请求参数</strong></p>
+
+<table><thead>
+<tr>
+  <th style="text-align: left">参数名</th>
+  <th style="text-align: left">参数类型</th>
+  <th style="text-align: center">是否必须</th>
+  <th style="text-align: center">描述</th>
+</tr>
+</thead><tbody>
+<tr>
+  <td style="text-align: left">followerUid</td>
+  <td style="text-align: left">String</td>
+  <td style="text-align: center">是</td>
+  <td style="text-align: center">跟随者 UID</td>
+</tr>
+</tbody></table>
+
+<blockquote>
+  <p>返回数据</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+</span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"00000"</span><span class="p">,</span><span class="w">
+</span><span class="s2">"msg"</span><span class="p">:</span><span class="w"> </span><span class="s2">"success"</span><span class="p">,</span><span class="w">
+</span><span class="s2">"requestTime"</span><span class="p">:</span><span class="w"> </span><span class="mi">1681201761390</span><span class="p">,</span><span class="w">
+</span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p><strong>返回值说明</strong></p>
+
+<table><thead>
+<tr>
+  <th style="text-align: left">返回字段</th>
+  <th style="text-align: left">字段说明</th>
+</tr>
+</thead><tbody>
+<tr>
+  <td style="text-align: left">data</td>
+  <td style="text-align: left">true操作成功</td>
+</tr>
+</tbody></table>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+<h3 id='72188f9be9'>获取跟随者单笔最小跟单数量和最大跟单数量</h3>
+<p>限速规则:  10次/1s (ip)</p>
+
+<p><strong>HTTP请求</strong></p>
+
+<ul>
+  <li>POST /api/mix/v1/trace/public/getFollowerConfig</li>
+</ul>
+
+<blockquote>
+  <p>请求示例</p>
+</blockquote>
+<pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.coincatch.com/api/mix/v1/trace/public/getFollowerConfig"</span> <span class="se">\</span>
+-H <span class="s2">"ACCESS-KEY:you apiKey"</span> <span class="se">\</span>
+-H <span class="s2">"ACCESS-SIGN:*******"</span> <span class="se">\</span>
+-H <span class="s2">"ACCESS-PASSPHRASE:*****"</span> <span class="se">\</span>
+-H <span class="s2">"ACCESS-TIMESTAMP:1659076670000"</span> <span class="se">\</span>
+-H <span class="s2">"locale:en-US"</span> <span class="se">\</span>
+-H <span class="s2">"Content-Type: application/json"</span> <span class="se">\</span>
+-d <span class="se">\'</span><span class="o">{</span>
+
+<span class="o">}</span><span class="s1">'
+</span></code></pre>
+<p><strong>请求参数</strong></p>
+
+<p>N/A</p>
+
+<blockquote>
+  <p>返回数据</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+</span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"00000"</span><span class="p">,</span><span class="w">
+</span><span class="s2">"msg"</span><span class="p">:</span><span class="w"> </span><span class="s2">"success"</span><span class="p">,</span><span class="w">
+</span><span class="s2">"requestTime"</span><span class="p">:</span><span class="w"> </span><span class="mi">1684832987371</span><span class="p">,</span><span class="w">
+</span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+</span><span class="p">{</span><span class="w">
+</span><span class="s2">"maxFollowQuantity"</span><span class="p">:</span><span class="w"> </span><span class="s2">"10000"</span><span class="p">,</span><span class="w">
+</span><span class="s2">"minFollowQuantity"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.002"</span><span class="p">,</span><span class="w">
+</span><span class="s2">"symbol"</span><span class="p">:</span><span class="w"> </span><span class="s2">"BTCUSDT"</span><span class="w">
+</span><span class="p">},</span><span class="w">
+</span><span class="p">{</span><span class="w">
+</span><span class="s2">"maxFollowQuantity"</span><span class="p">:</span><span class="w"> </span><span class="s2">"100"</span><span class="p">,</span><span class="w">
+</span><span class="s2">"minFollowQuantity"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="p">,</span><span class="w">
+</span><span class="s2">"symbol"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ETHUSD"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p><strong>返回值说明</strong></p>
+
+<table><thead>
+<tr>
+  <th style="text-align: left">返回字段</th>
+  <th style="text-align: left">字段说明</th>
+</tr>
+</thead><tbody>
+<tr>
+  <td style="text-align: left">maxFollowQuantity</td>
+  <td style="text-align: left">最大下单量(左币)</td>
+</tr>
+<tr>
+  <td style="text-align: left">minFollowQuantity</td>
+  <td style="text-align: left">最小下单量(左币)</td>
+</tr>
+<tr>
+  <td style="text-align: left">symbol</td>
+  <td style="text-align: left">symbol</td>
+</tr>
+</tbody></table>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+<h3 id='997f9d0e79'>交易员历史带单列表</h3>
+<p>限速规则 10次/1s (ip)</p>
+
+<p><strong>HTTP请求</strong></p>
+
+<ul>
+  <li>POST /api/mix/v1/trace/report/order/historyList</li>
+</ul>
+
+<blockquote>
+  <p>请求示例</p>
+</blockquote>
+<pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.coincatch.com/api/mix/v1/trace/report/order/historyList"</span> <span class="se">\</span>
+-H <span class="s2">"ACCESS-KEY:you apiKey"</span> <span class="se">\</span>
+-H <span class="s2">"ACCESS-SIGN:*******"</span> <span class="se">\</span>
+-H <span class="s2">"ACCESS-PASSPHRASE:*****"</span> <span class="se">\</span>
+-H <span class="s2">"ACCESS-TIMESTAMP:1659076670000"</span> <span class="se">\</span>
+-H <span class="s2">"locale:en-US"</span> <span class="se">\</span>
+-H <span class="s2">"Content-Type: application/json"</span> <span class="se">\</span>
+-d <span class="se">\'</span><span class="o">{</span>
+<span class="s2">"traderId"</span>: <span class="s2">"bfb3487586b33d51a290"</span>,
+<span class="s2">"pageNo"</span>: <span class="s2">"1"</span>,
+<span class="s2">"pageSize"</span>: <span class="s2">"10"</span>,
+<span class="o">}</span><span class="s1">'
+</span></code></pre>
+<p><strong>请求参数</strong></p>
+
+<table><thead>
+<tr>
+  <th style="text-align: left">参数名</th>
+  <th style="text-align: left">参数类型</th>
+  <th style="text-align: center">是否必须</th>
+  <th style="text-align: center">描述</th>
+</tr>
+</thead><tbody>
+<tr>
+  <td style="text-align: left">traderId</td>
+  <td style="text-align: left">String</td>
+  <td style="text-align: center">是</td>
+  <td style="text-align: center">交易员UID</td>
+</tr>
+<tr>
+  <td style="text-align: left">symbol</td>
+  <td style="text-align: left">String</td>
+  <td style="text-align: center">否</td>
+  <td style="text-align: center">币对</td>
+</tr>
+<tr>
+  <td style="text-align: left">pageNo</td>
+  <td style="text-align: left">String</td>
+  <td style="text-align: center">否</td>
+  <td style="text-align: center">pageNo（默认 1 最大 100）</td>
+</tr>
+<tr>
+  <td style="text-align: left">pageSize</td>
+  <td style="text-align: left">String</td>
+  <td style="text-align: center">否</td>
+  <td style="text-align: center">pageSize（默认 20 最大 20）</td>
+</tr>
+</tbody></table>
+
+<blockquote>
+  <p>返回数据</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+</span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"00000"</span><span class="p">,</span><span class="w">
+</span><span class="s2">"msg"</span><span class="p">:</span><span class="w"> </span><span class="s2">"success"</span><span class="p">,</span><span class="w">
+</span><span class="s2">"requestTime"</span><span class="p">:</span><span class="w"> </span><span class="mi">1685692345350</span><span class="p">,</span><span class="w">
+</span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+</span><span class="p">{</span><span class="w">
+</span><span class="s2">"trackingNo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1048189860453564416"</span><span class="p">,</span><span class="w">
+</span><span class="s2">"holdMode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"crossed"</span><span class="p">,</span><span class="w">
+</span><span class="s2">"holdSide"</span><span class="p">:</span><span class="w"> </span><span class="s2">"long"</span><span class="p">,</span><span class="w">
+</span><span class="s2">"leverage"</span><span class="p">:</span><span class="w"> </span><span class="s2">"20"</span><span class="p">,</span><span class="w">
+</span><span class="s2">"symbol"</span><span class="p">:</span><span class="w"> </span><span class="s2">"BTCUSD"</span><span class="p">,</span><span class="w">
+</span><span class="s2">"openPrice"</span><span class="p">:</span><span class="w"> </span><span class="s2">"57000.00"</span><span class="p">,</span><span class="w">
+</span><span class="s2">"openTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1685633857670"</span><span class="p">,</span><span class="w">
+</span><span class="s2">"closePrice"</span><span class="p">:</span><span class="w"> </span><span class="s2">"27195.5"</span><span class="p">,</span><span class="w">
+</span><span class="s2">"closeTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1685670186955"</span><span class="p">,</span><span class="w">
+</span><span class="s2">"closeAmount"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.13"</span><span class="p">,</span><span class="w">
+</span><span class="s2">"marginAmount"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.013623727717"</span><span class="p">,</span><span class="w">
+</span><span class="s2">"followerNum"</span><span class="p">:</span><span class="w"> </span><span class="s2">"25"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p><strong>返回值说明</strong></p>
+
+<table><thead>
+<tr>
+  <th style="text-align: left">返回字段</th>
+  <th style="text-align: left">字段说明</th>
+</tr>
+</thead><tbody>
+<tr>
+  <td style="text-align: left">trackingNo</td>
+  <td style="text-align: left">跟单号</td>
+</tr>
+<tr>
+  <td style="text-align: left">holdMode</td>
+  <td style="text-align: left">fixed:逐仓  crossed:全仓</td>
+</tr>
+<tr>
+  <td style="text-align: left">holdSide</td>
+  <td style="text-align: left">持仓方向 (long/short)</td>
+</tr>
+<tr>
+  <td style="text-align: left">leverage</td>
+  <td style="text-align: left">杠杆</td>
+</tr>
+<tr>
+  <td style="text-align: left">symbol</td>
+  <td style="text-align: left">交易对</td>
+</tr>
+<tr>
+  <td style="text-align: left">openPrice</td>
+  <td style="text-align: left">开仓均价</td>
+</tr>
+<tr>
+  <td style="text-align: left">openTime</td>
+  <td style="text-align: left">开仓时间 （毫秒时间戳）</td>
+</tr>
+<tr>
+  <td style="text-align: left">closePrice</td>
+  <td style="text-align: left">平仓均价</td>
+</tr>
+<tr>
+  <td style="text-align: left">closeTime</td>
+  <td style="text-align: left">平仓时间（毫秒时间戳）</td>
+</tr>
+<tr>
+  <td style="text-align: left">closeAmount</td>
+  <td style="text-align: left">平仓数量（左币）</td>
+</tr>
+<tr>
+  <td style="text-align: left">marginAmount</td>
+  <td style="text-align: left">保证金</td>
+</tr>
+<tr>
+  <td style="text-align: left">followerNum</td>
+  <td style="text-align: left">此笔订单跟单人数</td>
+</tr>
+</tbody></table>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+<h3 id='aa9e594e6e'>交易员当前带单列表</h3>
+<p>限速规则 10次/1s (ip)</p>
+
+<p><strong>HTTP请求</strong></p>
+
+<ul>
+  <li>POST /api/mix/v1/trace/report/order/currentList</li>
+</ul>
+
+<blockquote>
+  <p>请求示例</p>
+</blockquote>
+<pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.coincatch.com/api/mix/v1/trace/report/order/currentList"</span> <span class="se">\</span>
+-H <span class="s2">"ACCESS-KEY:you apiKey"</span> <span class="se">\</span>
+-H <span class="s2">"ACCESS-SIGN:*******"</span> <span class="se">\</span>
+-H <span class="s2">"ACCESS-PASSPHRASE:*****"</span> <span class="se">\</span>
+-H <span class="s2">"ACCESS-TIMESTAMP:1659076670000"</span> <span class="se">\</span>
+-H <span class="s2">"locale:en-US"</span> <span class="se">\</span>
+-H <span class="s2">"Content-Type: application/json"</span> <span class="se">\</span>
+-d <span class="se">\'</span><span class="o">{</span>
+<span class="s2">"traderId"</span>: <span class="s2">"bfb3487586b33d51a290"</span>,
+<span class="s2">"pageNo"</span>: <span class="s2">"1"</span>,
+<span class="s2">"pageSize"</span>: <span class="s2">"10"</span>,
+<span class="o">}</span><span class="s1">'
+</span></code></pre>
+<p><strong>请求参数</strong></p>
+
+<table><thead>
+<tr>
+  <th style="text-align: left">参数名</th>
+  <th style="text-align: left">参数类型</th>
+  <th style="text-align: center">是否必须</th>
+  <th style="text-align: center">描述</th>
+</tr>
+</thead><tbody>
+<tr>
+  <td style="text-align: left">traderId</td>
+  <td style="text-align: left">String</td>
+  <td style="text-align: center">是</td>
+  <td style="text-align: center">交易员UID</td>
+</tr>
+<tr>
+  <td style="text-align: left">symbol</td>
+  <td style="text-align: left">String</td>
+  <td style="text-align: center">否</td>
+  <td style="text-align: center">币对</td>
+</tr>
+<tr>
+  <td style="text-align: left">pageNo</td>
+  <td style="text-align: left">String</td>
+  <td style="text-align: center">否</td>
+  <td style="text-align: center">pageNo（默认 1 最大 100）</td>
+</tr>
+<tr>
+  <td style="text-align: left">pageSize</td>
+  <td style="text-align: left">String</td>
+  <td style="text-align: center">否</td>
+  <td style="text-align: center">pageSize（默认 20 最大 20）</td>
+</tr>
+</tbody></table>
+
+<blockquote>
+  <p>返回数据</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+</span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"00000"</span><span class="p">,</span><span class="w">
+</span><span class="s2">"msg"</span><span class="p">:</span><span class="w"> </span><span class="s2">"success"</span><span class="p">,</span><span class="w">
+</span><span class="s2">"requestTime"</span><span class="p">:</span><span class="w"> </span><span class="mi">1685692706038</span><span class="p">,</span><span class="w">
+</span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+</span><span class="p">{</span><span class="w">
+</span><span class="s2">"trackingNo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1048190313178349569"</span><span class="p">,</span><span class="w">
+</span><span class="s2">"holdMode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"crossed"</span><span class="p">,</span><span class="w">
+</span><span class="s2">"holdSide"</span><span class="p">:</span><span class="w"> </span><span class="s2">"long"</span><span class="p">,</span><span class="w">
+</span><span class="s2">"leverage"</span><span class="p">:</span><span class="w"> </span><span class="s2">"20"</span><span class="p">,</span><span class="w">
+</span><span class="s2">"symbol"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ETHUSD"</span><span class="p">,</span><span class="w">
+</span><span class="s2">"openPrice"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1905.5"</span><span class="p">,</span><span class="w">
+</span><span class="s2">"openTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1685633965458"</span><span class="p">,</span><span class="w">
+</span><span class="s2">"openAmount"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.77"</span><span class="p">,</span><span class="w">
+</span><span class="s2">"followerNum"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0"</span><span class="p">,</span><span class="w">
+</span><span class="s2">"takeProfitPrice"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+</span><span class="s2">"stopLossPrice"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+</span><span class="s2">"marginAmount"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.0026975"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p><strong>返回值说明</strong></p>
+
+<table><thead>
+<tr>
+  <th style="text-align: left">返回字段</th>
+  <th style="text-align: left">字段说明</th>
+</tr>
+</thead><tbody>
+<tr>
+  <td style="text-align: left">trackingNo</td>
+  <td style="text-align: left">跟单号</td>
+</tr>
+<tr>
+  <td style="text-align: left">holdMode</td>
+  <td style="text-align: left">fixed:逐仓  crossed:全仓</td>
+</tr>
+<tr>
+  <td style="text-align: left">holdSide</td>
+  <td style="text-align: left">持仓方向 (long/short)</td>
+</tr>
+<tr>
+  <td style="text-align: left">leverage</td>
+  <td style="text-align: left">杠杆</td>
+</tr>
+<tr>
+  <td style="text-align: left">symbol</td>
+  <td style="text-align: left">交易对</td>
+</tr>
+<tr>
+  <td style="text-align: left">openPrice</td>
+  <td style="text-align: left">开仓均价</td>
+</tr>
+<tr>
+  <td style="text-align: left">openTime</td>
+  <td style="text-align: left">开仓时间 （毫秒时间戳）</td>
+</tr>
+<tr>
+  <td style="text-align: left">openAmount</td>
+  <td style="text-align: left">开仓数量（左币）</td>
+</tr>
+<tr>
+  <td style="text-align: left">followerNum</td>
+  <td style="text-align: left">此笔订单跟单人数</td>
+</tr>
+<tr>
+  <td style="text-align: left">takeProfitPrice</td>
+  <td style="text-align: left">止盈价</td>
+</tr>
+<tr>
+  <td style="text-align: left">stopLossPrice</td>
+  <td style="text-align: left">止损价</td>
+</tr>
+<tr>
+  <td style="text-align: left">marginAmount</td>
+  <td style="text-align: left">保证金</td>
+</tr>
+</tbody></table>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+<h3 id='6db38712b7'>交易员查询止盈止损比例设置</h3>
+<p>trader调用接口</p>
+
+<p>限速规则 10次/1s (uid)</p>
+
+<p><strong>HTTP请求</strong></p>
+
+<ul>
+  <li>POST /api/mix/v1/trace/queryTraderTpslRatioConfig</li>
+</ul>
+
+<blockquote>
+  <p>请求示例</p>
+</blockquote>
+<pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.coincatch.com/api/mix/v1/trace/queryTraderTpslRatioConfig"</span> <span class="se">\</span>
+-H <span class="s2">"ACCESS-KEY:you apiKey"</span> <span class="se">\</span>
+-H <span class="s2">"ACCESS-SIGN:*******"</span> <span class="se">\</span>
+-H <span class="s2">"ACCESS-PASSPHRASE:*****"</span> <span class="se">\</span>
+-H <span class="s2">"ACCESS-TIMESTAMP:1659076670000"</span> <span class="se">\</span>
+-H <span class="s2">"locale:en-US"</span> <span class="se">\</span>
+-H <span class="s2">"Content-Type: application/json"</span> <span class="se">\</span>
+-d <span class="se">\'</span><span class="o">{</span>
+<span class="s2">"queryTpslRatioConfig"</span>: <span class="o">[{</span><span class="s2">"symbol"</span>:<span class="s2">"BTCUSDT"</span>,<span class="s2">"productType"</span>:<span class="s2">"umcbl"</span><span class="o">}]</span>
+<span class="o">}</span><span class="s1">'
+</span></code></pre>
+<p><strong>请求参数</strong></p>
+
+<table><thead>
+<tr>
+  <th style="text-align: left">参数名</th>
+  <th style="text-align: left">参数类型</th>
+  <th style="text-align: center">是否必须</th>
+  <th style="text-align: center">描述</th>
+</tr>
+</thead><tbody>
+<tr>
+  <td style="text-align: left">queryTpslRatioConfig</td>
+  <td style="text-align: left">List</td>
+  <td style="text-align: center">是</td>
+  <td style="text-align: center">symbol交易对集合</td>
+</tr>
+<tr>
+  <td style="text-align: left">&gt;symbol</td>
+  <td style="text-align: left">String</td>
+  <td style="text-align: center">是</td>
+  <td style="text-align: center">symbol</td>
+</tr>
+<tr>
+  <td style="text-align: left">&gt;productType</td>
+  <td style="text-align: left">String</td>
+  <td style="text-align: center">是</td>
+  <td style="text-align: center">产品线</td>
+</tr>
+</tbody></table>
+
+<blockquote>
+  <p>返回数据</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+</span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"00000"</span><span class="p">,</span><span class="w">
+</span><span class="s2">"msg"</span><span class="p">:</span><span class="w"> </span><span class="s2">"success"</span><span class="p">,</span><span class="w">
+</span><span class="s2">"requestTime"</span><span class="p">:</span><span class="w"> </span><span class="mi">1685692345350</span><span class="p">,</span><span class="w">
+</span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+</span><span class="p">{</span><span class="w">
+</span><span class="s2">"symbol"</span><span class="p">:</span><span class="w"> </span><span class="s2">"BTCUSDT"</span><span class="p">,</span><span class="w">
+</span><span class="s2">"stopLossRatio"</span><span class="p">:</span><span class="w"> </span><span class="s2">"40"</span><span class="p">,</span><span class="w">
+</span><span class="s2">"takeProfitRatio"</span><span class="p">:</span><span class="w"> </span><span class="s2">"120"</span><span class="w">
+</span><span class="p">},</span><span class="w">
+</span><span class="p">{</span><span class="w">
+</span><span class="s2">"symbol"</span><span class="p">:</span><span class="w"> </span><span class="s2">"BTCUSDT"</span><span class="p">,</span><span class="w">
+</span><span class="s2">"stopLossRatio"</span><span class="p">:</span><span class="w"> </span><span class="s2">"40"</span><span class="p">,</span><span class="w">
+</span><span class="s2">"takeProfitRatio"</span><span class="p">:</span><span class="w"> </span><span class="s2">"120"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p><strong>返回值说明</strong></p>
+
+<table><thead>
+<tr>
+  <th style="text-align: left">返回字段</th>
+  <th style="text-align: left">字段说明</th>
+</tr>
+</thead><tbody>
+<tr>
+  <td style="text-align: left">symbol</td>
+  <td style="text-align: left">symbol 交易对</td>
+</tr>
+<tr>
+  <td style="text-align: left">stopLossRatio</td>
+  <td style="text-align: left">止损比例设置的值 （值是正整数，40表示 40%）</td>
+</tr>
+<tr>
+  <td style="text-align: left">takeProfitRatio</td>
+  <td style="text-align: left">止盈比例设置的值 （值是正整数，120表示 120%）</td>
+</tr>
+</tbody></table>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+<h3 id='f83553cb49'>交易员设置止盈止损比例</h3>
+<p>限速规则 10次/1s (uid)</p>
+
+<p><strong>HTTP请求</strong></p>
+
+<ul>
+  <li>POST /api/mix/v1/trace/traderUpdateTpslRatioConfig</li>
+</ul>
+
+<blockquote>
+  <p>请求示例</p>
+</blockquote>
+<pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.coincatch.com/api/mix/v1/trace/traderUpdateTpslRatioConfig"</span> <span class="se">\</span>
+-H <span class="s2">"ACCESS-KEY:you apiKey"</span> <span class="se">\</span>
+-H <span class="s2">"ACCESS-SIGN:*******"</span> <span class="se">\</span>
+-H <span class="s2">"ACCESS-PASSPHRASE:*****"</span> <span class="se">\</span>
+-H <span class="s2">"ACCESS-TIMESTAMP:1659076670000"</span> <span class="se">\</span>
+-H <span class="s2">"locale:en-US"</span> <span class="se">\</span>
+-H <span class="s2">"Content-Type: application/json"</span> <span class="se">\</span>
+-d <span class="se">\'</span><span class="o">{</span>
+<span class="s2">"tpslRatioConfigList"</span>: <span class="o">[</span>
+<span class="o">{</span>
+    <span class="s2">"symbol"</span>: <span class="s2">"BTCUSDT"</span>,
+    <span class="s2">"stopLossRatio"</span>: <span class="s2">"40"</span>,
+    <span class="s2">"takeProfitRatio"</span>: <span class="s2">"110"</span>,
+    <span class="s2">"productType"</span>:<span class="s2">"umcbl"</span>
+<span class="o">}</span>,
+<span class="o">{</span>
+    <span class="s2">"symbol"</span>: <span class="s2">"ETHUSD"</span>,
+    <span class="s2">"stopLossRatio"</span>: <span class="s2">"40"</span>,
+    <span class="s2">"takeProfitRatio"</span>: <span class="s2">"110"</span>,
+    <span class="s2">"productType"</span>:<span class="s2">"dmcbl"</span>
+<span class="o">}</span>
+<span class="o">]</span>
+<span class="o">}</span><span class="s1">'
+</span></code></pre>
+<p><strong>请求参数</strong></p>
+
+<table><thead>
+<tr>
+  <th style="text-align: left">参数名</th>
+  <th style="text-align: left">参数类型</th>
+  <th style="text-align: center">是否必须</th>
+  <th style="text-align: center">描述</th>
+</tr>
+</thead><tbody>
+<tr>
+  <td style="text-align: left">tpslRatioConfigList</td>
+  <td style="text-align: left">List</td>
+  <td style="text-align: center">是</td>
+  <td style="text-align: center">各交易对止盈止损比例设置参数列表</td>
+</tr>
+</tbody></table>
+
+<p><strong>tpslRatioConfigList item</strong></p>
+
+<table><thead>
+<tr>
+  <th style="text-align: left">参数名</th>
+  <th style="text-align: left">参数类型</th>
+  <th style="text-align: center">是否必须</th>
+  <th style="text-align: center">描述</th>
+</tr>
+</thead><tbody>
+<tr>
+  <td style="text-align: left">symbol</td>
+  <td style="text-align: left">String</td>
+  <td style="text-align: center">是</td>
+  <td style="text-align: center">symbol交易对</td>
+</tr>
+<tr>
+  <td style="text-align: left">productType</td>
+  <td style="text-align: left">String</td>
+  <td style="text-align: center">是</td>
+  <td style="text-align: center">产品线</td>
+</tr>
+<tr>
+  <td style="text-align: left">stopLossRatio</td>
+  <td style="text-align: left">String</td>
+  <td style="text-align: center">否</td>
+  <td style="text-align: center">止损比例:0-400之内的正整数，其他值非法 (如果没传表示移除之前的设置，例如以前设置了止损比例，如果本次不传，则之前的设置会被移除,注：止损设置超过100通常在全仓模式下使用)</td>
+</tr>
+<tr>
+  <td style="text-align: left">takeProfitRatio</td>
+  <td style="text-align: left">String</td>
+  <td style="text-align: center">否</td>
+  <td style="text-align: center">止盈比例 0-400之内的正整数，其他值非法 (如果没传表示移除之前的设置，例如以前设置了止盈比例，如果本次不传，则之前的设置会被移除)</td>
+</tr>
+</tbody></table>
+
+<blockquote>
+  <p>返回数据</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+</span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"00000"</span><span class="p">,</span><span class="w">
+</span><span class="s2">"msg"</span><span class="p">:</span><span class="w"> </span><span class="s2">"success"</span><span class="p">,</span><span class="w">
+</span><span class="s2">"requestTime"</span><span class="p">:</span><span class="w"> </span><span class="mi">1685692706038</span><span class="p">,</span><span class="w">
+</span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p><strong>返回值说明</strong></p>
+
+<table><thead>
+<tr>
+  <th style="text-align: left">返回字段</th>
+  <th style="text-align: left">字段说明</th>
+</tr>
+</thead><tbody>
+<tr>
+  <td style="text-align: left">data</td>
+  <td style="text-align: left">true 表示设置成功</td>
+</tr>
+</tbody></table>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+<h2 id='0d754733c2'>现货跟单</h2>
+<h3 id='d08f7d2a3f'>查询当前带单列表（跟随者/交易员 调用）</h3>
 <p>限速规则 10次/1s</p>
 
 <p><strong>HTTP请求</strong></p>
@@ -4655,6 +5945,183 @@ Signature = base64.encode(Signature)
 <td style="text-align: left">true 设置成功</td>
 </tr>
 </tbody></table>
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+<h3 id='fec9f644fd'>现货交易员获取可移除跟随者配置</h3>
+<p>限速规则 10次/1s (uid)</p>
+
+<p><strong>HTTP请求</strong></p>
+
+<ul>
+  <li>POST /api/spot/v1/trace/config/getRemoveFollowerConfig</li>
+</ul>
+
+<blockquote>
+  <p>请求示例</p>
+</blockquote>
+<pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.coincatch.com/api/spot/v1/trace/config/getRemoveFollowerConfig"</span> <span class="se">\</span>
+-H <span class="s2">"ACCESS-KEY:you apiKey"</span> <span class="se">\</span>
+-H <span class="s2">"ACCESS-SIGN:*******"</span> <span class="se">\</span>
+-H <span class="s2">"ACCESS-PASSPHRASE:*****"</span> <span class="se">\</span>
+-H <span class="s2">"ACCESS-TIMESTAMP:1659076670000"</span> <span class="se">\</span>
+-H <span class="s2">"locale:en-US"</span> <span class="se">\</span>
+-H <span class="s2">"Content-Type: application/json"</span> <span class="se">\</span>
+-d <span class="se">\'</span><span class="o">{</span>
+<span class="s2">"pageNo"</span>:<span class="s2">"1"</span>,<span class="s2">"pageSize"</span>:<span class="s2">"10"</span>
+<span class="o">}</span><span class="s1">'
+</span></code></pre>
+<p><strong>请求参数</strong></p>
+
+<table><thead>
+<tr>
+  <th style="text-align: left">参数名</th>
+  <th style="text-align: left">参数类型</th>
+  <th style="text-align: center">是否必须</th>
+  <th style="text-align: center">描述</th>
+</tr>
+</thead><tbody>
+<tr>
+  <td style="text-align: left">pageNo</td>
+  <td style="text-align: left">String</td>
+  <td style="text-align: center">否</td>
+  <td style="text-align: center">页码</td>
+</tr>
+<tr>
+  <td style="text-align: left">pageSize</td>
+  <td style="text-align: left">String</td>
+  <td style="text-align: center">否</td>
+  <td style="text-align: center">页数</td>
+</tr>
+</tbody></table>
+
+<blockquote>
+  <p>返回数据</p>
+</blockquote>
+<pre class="highlight plaintext"><code>{
+"code": "00000",
+"msg": "success",
+"requestTime": 1689833233282,
+"data": {
+"removableFollowerMinUSDT": "100" // 只能移除资产小于100的用户
+}
+}
+</code></pre>
+<p><strong>返回值说明</strong></p>
+
+<table><thead>
+<tr>
+  <th style="text-align: left">返回字段</th>
+  <th style="text-align: left">字段说明</th>
+</tr>
+</thead><tbody>
+<tr>
+  <td style="text-align: left">removableFollowerMinUSDT</td>
+  <td style="text-align: left">能移除资产小于该值的用户</td>
+</tr>
+</tbody></table>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+<h3 id='058bfefd56'>现货交易员移除跟随者</h3>
+<p>限速规则 10次/1s (uid)</p>
+
+<p><strong>HTTP请求</strong></p>
+
+<ul>
+  <li>POST /api/spot/v1/trace/user/removeFollower</li>
+</ul>
+
+<blockquote>
+  <p>请求示例</p>
+</blockquote>
+<pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.coincatch.com/api/spot/v1/trace/user/removeFollower"</span> <span class="se">\</span>
+-H <span class="s2">"ACCESS-KEY:you apiKey"</span> <span class="se">\</span>
+-H <span class="s2">"ACCESS-SIGN:*******"</span> <span class="se">\</span>
+-H <span class="s2">"ACCESS-PASSPHRASE:*****"</span> <span class="se">\</span>
+-H <span class="s2">"ACCESS-TIMESTAMP:1659076670000"</span> <span class="se">\</span>
+-H <span class="s2">"locale:en-US"</span> <span class="se">\</span>
+-H <span class="s2">"Content-Type: application/json"</span> <span class="se">\</span>
+-d <span class="se">\'</span><span class="o">{</span>
+<span class="s2">"followerUserId"</span>: <span class="s2">"xxx"</span>
+<span class="o">}</span><span class="s1">'
+</span></code></pre>
+<p><strong>请求参数</strong></p>
+
+<table><thead>
+<tr>
+  <th style="text-align: left">参数名</th>
+  <th style="text-align: left">参数类型</th>
+  <th style="text-align: center">是否必须</th>
+  <th style="text-align: center">描述</th>
+</tr>
+</thead><tbody>
+<tr>
+  <td style="text-align: left">followerUserId</td>
+  <td style="text-align: left">String</td>
+  <td style="text-align: center">是</td>
+  <td style="text-align: center">跟随者UID，从/api/spot/v1/trace/user/myFollowers 中followerUserId 获取</td>
+</tr>
+</tbody></table>
+
+<blockquote>
+  <p>返回数据</p>
+</blockquote>
+<pre class="highlight plaintext"><code>{
+"code": "00000",
+"data": true,
+"msg": "success",
+"requestTime": "1681985013131"
+}
+</code></pre>
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
 <h3 id='36cac047b7-2'>交易员分润汇总</h3>
 <p>交易员调用接口 最近3个月数据</p>
 
